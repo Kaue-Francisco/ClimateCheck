@@ -5,3 +5,8 @@
 <p>Para fazer esse projeto vamos utilizar 2 API</p>
 <p>Saber o clima: One Call API 3.0</p>
 <p>Saber a localização: Geocoding API</p>
+
+## Tecnologias
+<br><br><br>
+
+<p>Em andamento</p>
