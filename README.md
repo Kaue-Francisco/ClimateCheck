@@ -7,6 +7,6 @@
 <p>Saber a localização: Geocoding API</p>
 
 ## Tecnologias
-<br>
+<br><br>
 
 <p>Em andamento</p>
