@@ -1,15 +1,32 @@
-from requests
+import requests
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-API_KEY = "845ec3fb6210c0055287e6bdcc07eae4"
-url = ('https://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid={}&lang=pt_br')
+def consulta(city):
+    API_KEY = "845ec3fb6210c0055287e6bdcc07eae4"
+    url = (f'https://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={API_KEY}&lang=pt_br')
+    response = requests.get(url)
+    return response.json()
 
-
-@app.route('/')
+@app.route('/', methods=['POST', 'GET'])
 def index():
-    return render_template('index.html')
+    if request.method == 'POST':
+        return render_template('index.html')
+    else:
+        return render_template('index.html')
+
+@app.route('/resposta', methods=['POST', 'GET'])
+def resposta():
+    if request.method == 'POST':
+        city = request.form['city']
+        r = consulta(city)
+        city = r['name']
+        temp = r['main']['temp']
+        return render_template('resposta.html', city=city, temp=round(temp))    
+
+    else:
+        return render_template('resposta.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

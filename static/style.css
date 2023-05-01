@@ -69,16 +69,27 @@ main {
 }
 
 .campos {
-    width: 50%;
+    text-align: center;
 }
 
 .campos input {
     border-radius: 10px;
     border: none;
+    text-align: center;
 }
 
-.campos input:focus {
+.campos input[type=text]:focus {
     outline: none;
     padding: 5px;
     font-weight: bolder;
+}
+
+.campos input[type=submit] {
+    font-weight: bold;
+    background-color: white;
+    padding: 10px 15px;
+}
+
+.campos input[type=submit]:hover {
+    color:green;
 }
