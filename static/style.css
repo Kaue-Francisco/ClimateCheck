@@ -63,9 +63,8 @@ main {
 
 .formLogin p {
     display: inline-block;
-    font-size: 14px;
+    font-size: 20px;
     color: #666;
-    margin-bottom: 25px;
 }
 
 .campos {
@@ -92,4 +91,21 @@ main {
 
 .campos input[type=submit]:hover {
     color:green;
+}
+
+.form-button {
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button-voltar {
+    border: none;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px 15px;
+}
+
+.button-voltar:hover {
+    color: green;
 }

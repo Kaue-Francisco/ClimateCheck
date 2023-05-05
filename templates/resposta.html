@@ -24,10 +24,11 @@
                     <h1>Resultado</h1>
                     
                     <h2>Cidade: {{ city }}</h2>
-                    <p>Temperatura: {{ temp }}°C</p>
+                    <p>Temperatura: <b>{{ temp }}°C</b></p><br>
+                    <p>Descrição: <b>{{ description }}</b></p>
                     
-                    <form action="{{ url_for('index') }}" method="POST">
-                        <input type="submit" value="Voltar">
+                    <form action="{{ url_for('index') }}" method="POST" class="form-button">
+                        <input class="button-voltar" type="submit" value="Voltar">
                     </form>
                 </div>
         </div> 

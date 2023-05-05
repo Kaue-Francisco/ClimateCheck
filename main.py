@@ -21,9 +21,13 @@ def resposta():
     if request.method == 'POST':
         city = request.form['city']
         r = consulta(city)
-        city = r['name']
-        temp = r['main']['temp']
-        return render_template('resposta.html', city=city, temp=round(temp))    
+        if r['cod'] == "400":
+            return render_template('index.html', aviso="Não foi encontrado essa cidade!")
+        else:
+            city = r['name']
+            temp = r['main']['temp']
+            description = r['weather'][0]['description']
+            return render_template('resposta.html', city=city, temp=round(temp), description=description)    
 
     else:
         return render_template('resposta.html')

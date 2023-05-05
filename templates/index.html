@@ -26,6 +26,9 @@
 
                         <!-- Campos da Cidade e Estado -->
                         <div class="campos">
+                            {% if aviso == "Não foi encontrado essa cidade!"%}
+                                <p>{{ aviso }}</p><br>
+                            {% endif%}
                             <label>Nome da cidade:</label><br>
                             <input type="text" name="city"> <br><br>
 
