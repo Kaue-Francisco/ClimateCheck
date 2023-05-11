@@ -34,13 +34,13 @@
 $ git clone https://github.com/Kaue-Francisco/ClimateCheck.git
 
 # Acesse a pasta do projeto onde você clonou
-$ cd react-native-portfolio
+$ cd ClimateCheck
 
 # Abra a pasta no VSCode
 $ code .
 
 # Logo após acesse o terminal do VSCode e instale as bibliotecas
-$ pip intall flask
+$ pip install flask
 
 # E depois
 $ pip install request
@@ -57,5 +57,7 @@ $ python3 main.py
 ## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+#
 
 <div align=center>Feito por Kauê Francisco & Gabriel Philipe</div>
