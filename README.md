@@ -2,7 +2,7 @@
 <br>
 
 <h2 align=center>Sobre o Projeto</h2>
-<p>Fizemos este site simples e direto ao objetivo, aonde seu objetivo é um usuário preencher o campo cidade de depois retornar com o clima da cidade e a descrição do tempo atual.</p>
+<p>Fizemos este site simples e direto ao objetivo, onde seu objetivo é um usuário preencher o campo cidade e depois retornar o clima da cidade e a descrição do tempo atual.</p>
 <br>
 
 
